@@ -40,6 +40,9 @@ header {
   color: #000;
 }
 
+footer {
+	padding: 4rem 0;
+}
 
 footer,
 footer a {
@@ -94,6 +97,7 @@ footer a {
 }
 
 .authors {
+	padding-top: 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
