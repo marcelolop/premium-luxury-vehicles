@@ -1,0 +1,104 @@
+@import url(./reset.css);
+
+:root {
+    --app-text-horse-color: #333333;
+}
+
+
+section {
+    padding: 5rem 0;
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 2rem;
+}
+
+
+/** left content **/
+    
+.left-content img {
+    width: 50rem;
+    height: 40rem;
+    border: 1px solid #cccccc;
+}
+
+
+
+/** right content **/
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: #333 solid 1px;
+    width: 100%;
+    padding: 2rem;
+    height: 100%;
+}
+
+.right-content h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.star-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+/** SPECIFIC-DETAILS SECTIONS **/
+
+.specific-details{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    align-items: center;
+}
+
+/** description **/
+
+
+/** details **/
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.technical-details, .general-details {
+    width: 100%;
+    border: #333 solid 1px;
+}
+
+/** general-details **/
+
+.general-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.general-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.general-text h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+/** horse-details **/
+.general-details .horse h2 {
+    
+}
