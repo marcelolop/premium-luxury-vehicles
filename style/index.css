@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* CSS Reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 1.6rem;
+  line-height: 1.5; 
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+p, h1, h2, h3, h4 {
+  overflow-wrap: break-word;
+}
+
+ul[role=list], ol[role=list]  {
+  list-style: none;
+}
+
+a, i, figure, img, button,
+input[type=button], input[type=submit] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea, button, select {
+  font: inherit;
+  border-style: none;
+  outline-style: none;
+}
+
+input[type=button], input[type=submit],
+input[type=reset], button, a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  max-width: 120rem;
+  width: min(100% - 3rem, 108rem);
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+/* CSS Custom Styles */
