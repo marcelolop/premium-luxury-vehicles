@@ -25,16 +25,39 @@
                     <a href="#">Sell</a>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
-                    <a href="#">Sign Up</a>
+                    <a id="sign-up" href="#">Sign Up</a>
                 </div>
             </nav>
         </div>
     </header>
+    
     <main>
+        <div class="overlay"></div>
         <div class="container">
             <p>Main</p>
+
+            <!-- Modal -->
+            <div class="modal">
+                <div>
+                    <h2>Get in touch</h2>
+                    <form class="flex flex__column-left">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"
+                            required></textarea>
+                        <input class="btn-1" id="send-button" type="button" value="SEND" alt="Send button">
+                    </form>
+                    <p>hello@stefanoturcarelli.com</p>
+                </div>
+            </div>
         </div>
+
+
     </main>
+
     <footer>
         <div class="container">
             <div class="row">
