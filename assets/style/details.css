@@ -1,9 +1,9 @@
 @import url(./reset.css);
 
 :root {
-    --app-text-horse-color: #333333;
+    --app-text-horse-color: #d88c00;
+    --app-button-background-color: #000;
 }
-
 
 section {
     padding: 5rem 0;
@@ -40,7 +40,7 @@ section {
 }
 
 .right-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #333;
 }
@@ -52,6 +52,79 @@ section {
     gap: 1rem;
     
 }
+
+.star-price .stars{
+    color: #ff9900;
+    font-size: 2rem;
+}
+
+.star-price .stars p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.star-price .price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+}
+
+div.basic-list-details ul li {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    list-style: none;
+    line-height: 3rem;
+}
+
+/** colors **/
+
+.color-grid {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.color-box {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+}
+
+.black-orange {
+    background-color: #333333;
+}
+
+.color-box h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 5rem;    
+}
+
+/** Place Order **/
+
+.place-order {
+    /* posisionando o botao na parte inferior direita */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.place-order button {
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--app-button-background-color);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /** SPECIFIC-DETAILS SECTIONS **/
 
 .specific-details{
@@ -78,6 +151,7 @@ section {
     border: #333 solid 1px;
 }
 
+
 /** general-details **/
 
 .general-details {
@@ -99,6 +173,13 @@ section {
 }
 
 /** horse-details **/
+
+.general-text span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
 .general-details .horse h2 {
-    
+    color: var(--app-text-horse-color);
 }
