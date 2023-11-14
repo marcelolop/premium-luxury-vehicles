@@ -30,7 +30,7 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
         <div class="overlay"></div>
         <div class="container">
@@ -38,20 +38,26 @@
 
             <!-- Modal -->
             <div class="modal">
-                <div>
-                    <h2>Get in touch</h2>
-                    <form class="flex flex__column-left">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" placeholder="John Doe" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Email" required>
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"
-                            required></textarea>
-                        <input class="btn-1" id="send-button" type="button" value="SEND" alt="Send button">
-                    </form>
-                    <p>hello@stefanoturcarelli.com</p>
-                </div>
+                <form class="sign-up-modal-container">
+                    <a class="sign-up-google" href="#">Sign up with Google</a>
+                    <a class="sign-up-apple" href="#">Sign up with Apple</a>
+                    <p>or</p>
+                    <div class="sign-up-email-password">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <label for="password">Password:</label>
+                        <input name="password" id="password" cols="30" rows="5" placeholder="Create a password"
+                            required></input>
+                    </div>
+                    <div class="terms-checkbox">
+                        <input type="checkbox" name="tc" id="tc">
+                        <label for="tc">I agree to the <a class="tc-link" href="#">terms and conditions</a></label>
+                    </div>
+                    <div class="have-account">
+                        <p>Already have an account? <a class="login-link" href="#">Login</a></p>
+                        <input id="sign-up-modal-btn" type="button" value="SignUp" alt="Sign up button">
+                    </div>
+                </form>
             </div>
         </div>
 
