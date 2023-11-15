@@ -309,6 +309,50 @@ section.hero-banner .circla-label img {
   }
 }
 
+.app-btn-global-type-x1 {
+    background-color: #131212;
+    border: 0.1rem solid  #131212;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    color: rgb(244, 244, 240);
+    transition: all 0.5s ease-in-out;
+    font-weight: 600;
+}
+
+.app-btn-global-type-x1:hover {
+    background-color: rgb(244, 244, 240);
+    color:#131212;
+}
+
+.app-btn-global-type-x2 {
+    background-color: #ffdb4d;
+    border: 0.2rem solid  #ffdb4d;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    color: #2b2626;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.app-btn-global-type-x2:hover {
+    border: 0.2rem solid  #2b2626;
+    /* font-weight: 700; */
+}
+
+.app-btn-global-type-x3 {
+    background-color: rgb(238, 240, 224);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    color: #2b2626;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.app-btn-global-type-x3:hover {
+    background-color: #2b2626;
+    color: rgb(238, 240, 224);
+}
+
 /* ! ------------------------------------------------------------------------ */
 /* ! Login Dialog                                                             */
 /* ! ------------------------------------------------------------------------ */
