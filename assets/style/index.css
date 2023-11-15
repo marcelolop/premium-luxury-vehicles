@@ -1,5 +1,9 @@
 @import url(./reset.css);
+@import url(./header-footer.css);
 
+/* ! ------------------------------------------------------------------------ */
+/* ! Section Hero Banner                                                      */
+/* ! ------------------------------------------------------------------------ */
 
 .hero-banner {
   display: flex;
@@ -9,20 +13,24 @@
   padding-top: 6rem;
 }
 
-.Luxury-vehicles-title {
+.luxury-vehicles-title {
   text-align: left;
   position: absolute;
   top: 20px;
-   left: 7rem;
-   color: #000;
-   font-size: 2.5em;
-   
+  left: 7rem;
+  color: #000;
+  font-size: 2.5em;
 }
+
 .hero-image-container {
   position: relative;
   width: 60%;
-  order: 2; 
-  background-image: radial-gradient(circle at top, #ffffff 60%, rgba(95, 153, 143,0.15));
+  order: 2;
+  background-image: radial-gradient(
+    circle at top,
+    #ffffff 60%,
+    rgba(95, 153, 143, 0.15)
+  );
   border-radius: 8px; /* Optional: if you want rounded corners */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.01); /* Horizontal offset, vertical offset, blur radius, color */
   bottom: 6rem;
@@ -30,46 +38,46 @@
   display: flex;
   justify-content: center;
 }
+
 .hero-image {
   width: 80%;
-  height: 100%; 
-  display:flex;
- margin-bottom: -20rem;
- padding-bottom: 5rem;
+  height: 100%;
+  display: flex;
+  margin-bottom: -20rem;
+  padding-bottom: 5rem;
 }
 
-section.hero-banner .circla-label img{
+section.hero-banner .circla-label img {
   position: absolute;
   left: -50px;
-  bottom:-25px ;
+  bottom: -25px;
   width: 14rem;
 }
-p{
-  font-size: 15px;
-}
 
-.thumbnail-container{
+.thumbnail-container {
   background-color: rgb(235, 100, 76);
-  width: 150px; /* Adjust as necessary */
+  width: 150px;
   height: auto;
-  border-radius: 8px; /* Optional: if you want rounded corners */
+  border-radius: 8px;
   margin-bottom: 10px;
-
 }
+
 .thumbnail {
-  width: 150px; /* Adjust as necessary */
+  width: 150px;
   height: 120px;
-  border-radius: 8px; /* Optional: if you want rounded corners */
+  border-radius: 8px;
   margin-bottom: 10px;
   position: relative;
-  bottom:1rem ;
+  bottom: 1rem;
   left: 1rem;
 }
-.description{
+
+.description {
   margin: 25px 0px;
 }
+
 .explore-button {
-  background-color: #ffcc00; /* Bright color for the button */
+  background-color: #ffcc00;
   color: #000;
   border: none;
   padding: 10px 20px;
@@ -77,16 +85,16 @@ p{
   cursor: pointer;
   border-radius: 4px;
   margin-bottom: 25px;
-  cursor: pointer; /* Changes the cursor on hover */
-    font-size: 16px; /* Adjust font size as needed */
-    font-weight: bold; /* Makes the text bold */
-    border-radius: 5px; /* Rounds the corners of the button */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
-    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
 }
 
 .explore-button:hover {
-  background-color: #e6b800; /* Darker shade for hover effect */
+  background-color: #e6b800;
 }
 
 .specs {
@@ -98,31 +106,28 @@ p{
 
 .spec-item {
   text-align: center;
-  /* margin: 0 20px;  */
-
-  
 }
 
 .spec-item h3 {
-  color: #333; /* Change to desired heading color */
+  color: #333;
   margin-bottom: 5px;
 }
 
 .spec-item p {
-  color: #000; /* Change to desired text color */
-  font-size: 1.5em; /* Adjust the size as needed */
+  color: #000;
+  font-size: 1.5em;
   font-weight: bold;
 }
+
 .spec-item:last-child {
   margin-right: 0;
 }
 
 .car-offers {
   background-color: #fff;
-
 }
 
-.car-offers-title h2{
+.car-offers-title h2 {
   color: #000;
   font-size: 3.5rem;
   text-align: center;
@@ -142,7 +147,7 @@ p{
 .car-item {
   width: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.0); /* Adjust shadow as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
   margin-bottom: 20px;
 }
 
@@ -158,28 +163,29 @@ p{
   padding: 0 16px;
   margin-top: 16px;
 }
+
 .car-item h3 {
   color: #333;
-  font-size: 1.5em; /* Adjust size as needed */
-  /* margin: 10px 0; */
+  font-size: 1.5em;
   text-align: left;
   white-space: nowrap;
 }
+
 .card-rating {
-  color: rgb(189, 112, 50); /* gold color */
-  font-size: 18px; /* larger size for visibility */
+  color: rgb(189, 112, 50);
+  font-size: 18px;
   margin-bottom: 7px;
 }
 
 .car-item .price {
-  color: #e84c3d; /* Adjust to the exact color using a color picker */
-  font-size: 1.5em; /* Adjust size as needed */
+  color: #e84c3d;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 .car-item p {
   color: #555;
-  font-size: 1em; /* Adjust size as needed */
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
@@ -187,15 +193,16 @@ p{
   list-style: none;
   padding: 0;
   color: #555;
-  font-size: 0.9em; /* Adjust size as needed */
+  font-size: 0.9em;
 }
 
 .car-info li {
   margin-bottom: 5px;
 }
+
 .card {
   width: 277px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -207,20 +214,17 @@ p{
 }
 
 .card-title {
-  /* margin: 16px; */
   font-size: 24px;
   color: #333;
 }
 
 .card-price {
-  /* margin: 0 16px; */
   font-size: 18px;
   color: #e84c3d;
   font-weight: bold;
 }
 
 .card-description {
-  /* margin: 16px; */
   font-size: 14px;
   color: #555;
 }
@@ -229,191 +233,80 @@ p{
   padding: 16px;
   display: flex;
   justify-content: space-between;
-  border: 0.05px solid #eeebeb; /* Adjust the color #ccc to match the desired border color */
-  border-radius: 8px; /* Adjust the value to match the desired border radius */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.02); /* This adds a shadow to the card, as seen in the image */
+  border: 0.05px solid #eeebeb;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
   overflow: hidden;
   text-align: center;
 }
 
 .card-info-item .info-title {
-  display:  block;
+  display: block;
   font-size: 12px;
   color: #181717;
-  
 }
+
 .card-info-item:not(:last-child) {
   border-right: 1px solid #ccc;
-  padding-right: 15px; 
-  /* margin-right: 5px;  */
-  
+  padding-right: 15px;
 }
+
 .card-info-item:not(:first-child) {
   position: relative;
   right: 20px;
-  
-}
-.info {
-  font-size:  16px;
-  color: #000000;
-  font-weight: bold;
-  
 }
 
+.info {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
 
 @media (max-width: 600px) {
   .card {
-      /* margin: 20px; */
-      width: calc(100% - 40px);
+    width: calc(100% - 40px);
   }
 }
 
 @media (max-width: 1190px) {
   .hero-banner {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
   }
 
   .hero-image-container {
-    width: 100%; /* Full width */
+    width: 100%;
   }
 
   .circla-label img {
-    width: 20%; /* Smaller label */
-    right: 10%; /* Adjust as needed */
-    bottom: 10%; /* Adjust as needed */
+    width: 20%;
+    right: 10%;
+    bottom: 10%;
   }
 
   .cta {
-    width: 100%; /* Full width */
-    order: 2; /* Ensure this comes after the image container */
+    width: 100%;
+    order: 2;
   }
 }
 
-/* Small screens (and smaller) */
 @media (max-width: 768px) {
   .hero-image-container {
-    width: 100%; /* Full width */
+    width: 100%;
   }
 
   .circla-label img {
-    width: 10rem; /* Fixed size, or use percentage as preferred */
-    right: 5%; /* Adjust to keep it relative to the parent */
+    width: 10rem;
+    right: 5%;
     bottom: 5%;
   }
 
   .cta {
-    order: 3; /* Ensure this comes after the image container */
+    order: 3;
   }
-}
-
-header {
-  background-color: #fff;
-}
-
-.desktop-nav {
-  align-items: baseline;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 0;
-}
-
-@media (max-width: 64.5rem) {
-  .pages {
-    display: none;
-  }
-}
-
-.desktop-nav h1 {
-  color: #000;
-}
-
-.pages a {
-  color: #000;
-  padding: 1rem 2rem;
-}
-
-.pages a:last-child {
-  background-color: #000;
-  border: 0.1rem solid transparent;
-  border-radius: 0.5rem;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.pages a:last-child:hover {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  border: #000 0.1rem solid;
-  color: #000;
-}
-
-footer {
-  padding: 4rem 0;
-}
-
-footer,
-footer a {
-  background-color: #1b1b1b;
-  color: #fff;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.footer-links,
-.newsletter {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 1.5rem;
-}
-
-.newsletter input {
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-}
-
-.copyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.join-btn {
-  align-self: flex-end;
-  padding: 1rem 2rem;
-  background-color: #000;
-  border: 0.1rem solid transparent;
-  border-radius: 0.5rem;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-.join-btn:hover {
-  align-self: flex-end;
-  padding: 1rem 2rem;
-  background-color: #000;
-  border: 0.1rem solid #fff;
-  border-radius: 0.5rem;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.authors {
-  padding-top: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
 }
 
 /* ! ------------------------------------------------------------------------ */
-/* !                                  Dialog                                  */
+/* ! Login Dialog                                                             */
 /* ! ------------------------------------------------------------------------ */
 
 .overlay,
@@ -518,7 +411,11 @@ footer a {
   color: #1b1b1b;
 }
 
-.flex-container {
+/* ! ------------------------------------------------------------------------ */
+/* ! Section Brands                                                           */
+/* ! ------------------------------------------------------------------------ */
+
+.brands-flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -526,7 +423,7 @@ footer a {
   padding: 4rem 0;
 }
 
-.flex-container img {
+.brands-flex-container img {
   width: 30rem;
   border-radius: 0.4rem;
 }
@@ -598,128 +495,140 @@ footer a {
   padding: 1rem 2rem;
   color: #000;
 }
-/*////////////////////
-/   Discount offer   /
-/////////////////////*/
 
-.discount-offer-flex-container , .sports-car-flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ! ------------------------------------------------------------------------ */
+/* ! Section Discount Offer                                                   */
+/* ! ------------------------------------------------------------------------ */
+
+.discount-offer-flex-container,
+.sports-car-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 870px) {
-    .discount-offer-flex-container {
-        flex-direction: column-reverse;
-    }
+  .discount-offer-flex-container {
+    flex-direction: column-reverse;
+  }
 
-    .sports-car-flex-container {
-        flex-direction: column;
-    }
+  .sports-car-flex-container {
+    flex-direction: column;
+  }
 
-    .sports-car-image-div{ 
-        margin-right: 0;
-    }
+  .sports-car-image-div {
+    margin-right: 0;
+  }
 }
 
 .discount-offer {
-    background-color: rgb(241, 241, 218);
-    gap: 2rem;
+  background-color: rgb(241, 241, 218);
+  gap: 2rem;
 }
 
-.discount-offer-car-image-div , .discount-offer-text-part {
-    flex: 1;
-    height: 100%;
+.discount-offer-car-image-div,
+.discount-offer-text-part {
+  flex: 1;
+  height: 100%;
 }
 
-.discount-offer-h2-for-text  {
-    font-size: 5rem;
-    font-weight: bolder;
+.discount-offer-h2-for-text {
+  font-size: 5rem;
+  font-weight: bolder;
 }
 
 .discount-offer-text {
-    margin: 5rem 0;
+  margin: 5rem 0;
 }
 
 .discount-offer-discover-more-button-div {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .discount-offer-discover-more-button {
-    width: 20rem;
-    height: 4rem;
-    background-color: rgb(239, 239, 38);
-    color:#0e0d0d;
-    text-align: center;
-    line-height: 4rem;
-    font-size: 2rem;
-    border-radius: 7px;
-    padding: 4px 8px;
+  width: 20rem;
+  height: 4rem;
+  background-color: rgb(239, 239, 38);
+  color: #0e0d0d;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+  border-radius: 7px;
+  padding: 4px 8px;
 }
 
-.discount-offer-car-stats , .sports-car-stats {
-    width: 100%;
-    height: 5rem;
-    margin-bottom: 5rem;
+.discount-offer-car-stats,
+.sports-car-stats {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 5rem;
 }
 
-.discount-offer-car-stats tbody , .discount-offer-car-stats thead , .sports-car-stats tbody, .sports-car-stats thead {
-    text-align: left;
+.discount-offer-car-stats tbody,
+.discount-offer-car-stats thead,
+.sports-car-stats tbody,
+.sports-car-stats thead {
+  text-align: left;
 }
 
-.discount-offer-car-stats th, .discount-offer-car-stats td , .sports-car-stats th , .sports-car-stats td {
-    width: 33%;
-    height: 50%;
+.discount-offer-car-stats th,
+.discount-offer-car-stats td,
+.sports-car-stats th,
+.sports-car-stats td {
+  width: 33%;
+  height: 50%;
 }
 
-.discount-offer-car-stats tbody , .sports-car-stats tbody {
-    font-weight: bolder;
-    font-size: 25px;
+.discount-offer-car-stats tbody,
+.sports-car-stats tbody {
+  font-weight: bolder;
+  font-size: 25px;
 }
 
-/*/////////////////////
-/   Sport car offer   /
-/////////////////////*/
+/* ! ------------------------------------------------------------------------ */
+/* ! Section Sports Car                                                       */
+/* ! ------------------------------------------------------------------------ */
 
 .sports-car {
-    background-color: rgb(236, 227, 197);
-    gap: 2rem;
+  background-color: rgb(236, 227, 197);
+  gap: 2rem;
 }
 
 .sports-car-image {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
-.sports-car-image-div{ 
-    margin-right: 4rem;
-}
-
-.sports-car-image-div , .sports-car-text-part {
-    flex: 1;
-    height: 100%;
+.sports-car-image-div {
+  margin-right: 4rem;
 }
 
-.sports-car-h2-for-text  {
-    font-size: 4rem;
-    font-weight: bolder;
+.sports-car-image-div,
+.sports-car-text-part {
+  flex: 1;
+  height: 100%;
+}
+
+.sports-car-h2-for-text {
+  font-size: 4rem;
+  font-weight: bolder;
 }
 
 .sports-car-text {
-    margin: 5rem 0;
+  margin: 5rem 0;
 }
 
 .sports-car-discover-more-button-div {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .sports-car-discover-more-button {
-    width: 20rem;
-    height: 4rem;
-    border: 2px solid #0f0f0f;
-    color:#0e0d0d;
-    text-align: center;
-    line-height: 4rem;
-    font-size: 2rem;
-    border-radius: 7px;
-    padding: 4px 8px;
+  width: 20rem;
+  height: 4rem;
+  border: 2px solid #0f0f0f;
+  color: #0e0d0d;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+  border-radius: 7px;
+  padding: 4px 8px;
 }
