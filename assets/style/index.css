@@ -535,10 +535,11 @@ section.hero-banner .circla-label img {
 .discount-offer-h2-for-text {
   font-size: 5rem;
   font-weight: bolder;
+  line-height: 4.5rem;
 }
 
 .discount-offer-text {
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 
 .discount-offer-discover-more-button-div {
@@ -614,7 +615,7 @@ section.hero-banner .circla-label img {
 }
 
 .sports-car-text {
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 
 .sports-car-discover-more-button-div {
