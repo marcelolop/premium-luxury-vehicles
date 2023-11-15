@@ -88,6 +88,7 @@ a {
   width: min(100% - 3rem, 108rem);
   margin-inline: auto;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* CSS Custom Styles */
