@@ -10,14 +10,17 @@
 </head>
 <body>
     <main>
-        <section>
+        <section id="product">
             <div class="container product-detail">
                 <div class="left-content">
-                    <img src="./assets/media/img/details images/purepng.com-bugatti-veyron-164-grand-sport-vitesse-carcarvehicletransportbugatti-961524664527nnvwu.png" alt="">
+                    <img id="image" src="./assets/media/img/details-images/black-orange.png" alt="Bugatti Veyron 16.4 Grand Sport">
                 </div>
                 <div class="right-content">
                     <h2> BUGATTI VEYRON 16.4 GRAND SPORT</h2>
-                    <div class="star-price">
+                    <div class="price">
+                        <h3>USD 2,999 / day</h3>
+                    </div>
+                    <div class="star-rating">
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -26,40 +29,38 @@
                             <i class="fas fa-star-half-alt"></i>
                             <p>4.7</p>
                         </div>
-                        <div class="price">
-                            <h3>USD $2,000,000</h3>
-                        </div>
                     </div>
                     <div class="basic-list-details">
-                        <ul>
-                            <li>Veyron Grand Sport series</li>
-                            <li> year</li>
-                            <li>Black/orange</li>
-                        </ul>
+                        <table>
+                        <tr>
+                            <th>Model</th>
+                            <th>Year</th>
+                            <th>Series</th>
+                        </tr>
+                        <tr>
+                            <td>Bugatti Veyron</td>
+                            <td>2022</td>
+                            <td>Grand Sport</td>
+                        </tr>
+                        </table>
                     </div>
                     <div class="color-options">
-                        <div class="color-grid">
-                                <div class="color-box black-orange">
-                                    <h3>Black/orange</h3>
-                                </div>
-                                <div class="color-box black-blue">
-                                    <h3>Black/blue</h3>
-                                </div>
-                                <div class="color-box black">
-                                    <h3>Black</h3>
-                                </div>
-                                <div class="color-box white">
-                                    <h3>White</h3>
-                                </div>
-                        </div>
+                        <label for="color">Color:</label>
+                        <select title="Color" name="color" id="color">
+                            <option value="black-orange">Black/orange</option>
+                            <option value="black-blue">Black/blue</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <!-- Add more options as needed -->
+                        </select>
                     </div>
-                    <div class="place-order">
-                        <button>Place Order</button>
+                    <div class="rent">
+                        <button>Rent</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="description">
             <div class="container specific-details">
                 <div class="description">
                     <h2>Description</h2>
@@ -69,7 +70,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="details">
             <div class="container">
                 <div class="details">
                     <div class="technical-details">
@@ -99,6 +100,6 @@
             </div>
         </div>
         </section>
-    </main>
+        </main>
 </body>
 </html>

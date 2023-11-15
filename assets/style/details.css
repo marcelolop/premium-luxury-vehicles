@@ -11,15 +11,20 @@ section {
     box-shadow: #333 0 0 0.1rem;
 }
 
+#product {
+    background-color: #f5f5f5;
+}
+
+#description {
+    background-color: rgb(160, 158, 158);
+}
+
 .product-detail {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(43rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     place-items: center;
     gap: 2rem;
-    background-color: #dddddd;
-    border-radius:1rem;
     padding: 2rem;
-    box-shadow: #000000 0 0 0.5rem;
 }
 
 /** left content **/
@@ -47,69 +52,64 @@ section {
     color: #333;
 }
 
-.star-price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 2.5rem;
-}
-
-.star-price .stars{
+.star-rating .stars{
     color: #ff9900;
     font-size: 2rem;
 }
 
-.star-price .stars p {
+.star-rating .stars p {
     font-size: 1.5rem;
     font-weight: 500;
     color: #333;
 }
 
-.star-price .price {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 2rem;
+.basic-list-details {
+    overflow-x: auto;
 }
 
-div.basic-list-details ul li {
+.basic-list-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.basic-list-details th,
+.basic-list-details td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.basic-list-details th {
+    background-color: #f2f2f2;
+}
+
+.color-options label {
+    margin-right: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: #333;
-    list-style: none;
+}
+
+select {
+    padding: 1rem;
+    border: 0.1rem solid #cccccc;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
     line-height: 3rem;
+}
+
+select:focus {
+    outline: 0.1rem solid var(--app-button-background-color);
 }
 
 /** colors **/
 
-.color-grid {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
 
-.color-box {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    border: 1px solid #cccccc;
-}
+/** rent **/
 
-.black-orange {
-    background-color: #333333;
-}
-
-.color-box h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 5rem;    
-}
-
-/** Place Order **/
-
-.place-order {
+.rent {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -117,9 +117,9 @@ div.basic-list-details ul li {
     padding: 2.5rem;
 }
 
-.place-order button {
+.rent button {
     padding: 1rem 3rem;
-    border: none;
+    border: 0.1rem solid var(--app-button-background-color);
     border-radius: 0.5rem;
     background-color: var(--app-button-background-color);
     color: #fff;
@@ -127,6 +127,16 @@ div.basic-list-details ul li {
     font-weight: 500;
 }
 
+.rent button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--app-button-background-color);
+    transition: 0.5s ease-in-out;
+}
+
+.rent button:active {
+    transform: scale(0.98);
+}
 /** SPECIFIC-DETAILS SECTIONS **/
 
 .specific-details{
@@ -209,3 +219,14 @@ div.basic-list-details ul li {
     font-weight: 500;
     color: #333;
 }
+
+@media (max-width: 600px) {
+    .basic-list-details table {
+      width: 100%;
+    }
+
+    .basic-list-details th,
+    .basic-list-details td {
+      font-size: 14px;
+    }
+  }
