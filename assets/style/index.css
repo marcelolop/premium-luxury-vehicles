@@ -398,13 +398,6 @@ section.hero-banner .circla-label img {
   padding: 0.5rem;
 }
 
-.sign-up-apple-icon {
-    line-height: 100%;
-    width: 1rem;
-    color:#000;
-    margin-right: 1rem;
-}
-
 .valid {
   background-image: url(../media/icons/check-mark.png);
   background-position-x: right 1rem;
