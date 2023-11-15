@@ -4,7 +4,6 @@
 :root {
     --app-general-text-h2-color: #d88c00;
     --app-button-background-color: #000;
-
 }
 
 section {
@@ -112,6 +111,7 @@ section {
 }
 
 
+
 select {
     padding: 1rem;
     border-radius: 0.5rem;
@@ -196,7 +196,6 @@ select:focus {
     align-items: center;
 }
 
-
 .technical-details, .general-details {
     width: 100%;
 }
@@ -206,6 +205,13 @@ select:focus {
     font-weight: 500;
     color: #000;
     line-height: 4rem;
+}
+
+.technical-details h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 2rem;
 }
 
 .technical-details ul li {
@@ -243,17 +249,22 @@ select:focus {
     color: #000;
 }
 
+/**GALLERY**/
+
+
+
 /** REVIEW **/
 
 #reviews {
     background-color: #f9f9f9;
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 #reviews h2 {
     font-size: 3rem;
     font-weight: 700;
-    color: #000;
+    color: #333;
+    padding: 2rem 0;
     margin-bottom: 2rem;
 }
 
@@ -264,7 +275,7 @@ select:focus {
 
 .review-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start; 
     margin-bottom: 2rem;
     padding: 2rem;
     background-color: #fff;
@@ -281,7 +292,6 @@ select:focus {
 
 .review-content {
     flex-grow: 1;
-    /* Add the following styles for better readability */
     padding-left: 2rem;
     border-left: 0.2rem solid #ccc;
 }
@@ -298,9 +308,30 @@ select:focus {
 }
 
 .user-review {
-    color: #000;
+    color: #333;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .review-item {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .user-logo {
+        margin-right: 0; 
+        margin-bottom: 2rem;
+    }
+
+    .review-content {
+        margin-top: 2rem; 
+        border-top: 0.2rem solid #ccc;
+        padding-top: 2rem; 
+        padding-left: 0; 
+        border-left: none; 
+    }
 }
 
 /** hero banner **/
