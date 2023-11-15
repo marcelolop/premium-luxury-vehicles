@@ -8,15 +8,6 @@
 
 section {
     padding: 5rem 0;
-    box-shadow: #333 0 0 0.1rem;
-}
-
-#product {
-    background-color: #f5f5f5;
-}
-
-#description {
-    background-color: rgb(160, 158, 158);
 }
 
 .product-detail {
@@ -32,6 +23,7 @@ section {
 .left-content img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /** right content **/
@@ -53,7 +45,7 @@ section {
 }
 
 .star-rating .stars{
-    color: #ff9900;
+    color: #f2e600;
     font-size: 2rem;
 }
 
@@ -61,6 +53,12 @@ section {
     font-size: 1.5rem;
     font-weight: 500;
     color: #333;
+}
+
+.price h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #b7686e;
 }
 
 .basic-list-details {
@@ -103,9 +101,6 @@ select {
 select:focus {
     outline: 0.1rem solid var(--app-button-background-color);
 }
-
-/** colors **/
-
 
 /** rent **/
 
@@ -152,18 +147,27 @@ select:focus {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 2rem 0;
+    box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.1), 0 -0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.1);
 }
+
 
 .description h2 {
     font-size: 2.5rem;
     font-weight: 500;
     color: #333;
+    margin-bottom: 2rem;
 }
 
 .description p {
     font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
 }
 
+.description p:last-child {
+    margin-bottom: 0;
+}
 /** details **/
 
 .details {
@@ -171,7 +175,9 @@ select:focus {
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 2rem;
     align-items: center;
+    box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.1), 0 -0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.1);
 }
+
 
 .technical-details, .general-details {
     width: 100%;
@@ -209,14 +215,66 @@ select:focus {
 
 .general-text h2 {
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: #333;
 }
-
-/** horse-details **/
 
 .general-text span {
     font-size: 1.5rem;
     font-weight: 500;
+    color: #333;
+}
+
+#reviews {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+}
+
+#reviews h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.review-list {
+    list-style: none;
+    padding: 0;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.user-logo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.review-content {
+    flex-grow: 1;
+}
+
+.user-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.star-rating {
+    color: #f5ba00;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.user-review {
     color: #333;
 }
 
@@ -229,4 +287,64 @@ select:focus {
     .basic-list-details td {
       font-size: 14px;
     }
-  }
+
+    .review-item {
+        flex-direction: column;
+    }
+
+    .user-logo {
+        margin: 0 auto 2rem;
+    }
+}
+
+/** hero banner **/
+
+#hero-banner {
+    background-image: linear-gradient(11.5deg, #000000 50%,  #d8b800 50%);
+}
+
+.hero-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    place-items: center;
+}
+
+.icon-branch {
+    height: 10rem;
+    width: 15rem;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.banner-content h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner-content p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner-content button {
+    margin: 2rem 0;
+    width: 20rem;
+    padding: 1rem 3rem;
+    border: 0.1rem solid var(--app-button-background-color);
+    border-radius: 0.5rem;
+    background-color: #f0d400;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
