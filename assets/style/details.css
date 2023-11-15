@@ -153,7 +153,6 @@ select:focus {
     flex-direction: column;
     gap: 1rem;
     padding: 2rem 0;
-    box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.1), 0 -0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.1);
 }
 
 
@@ -180,7 +179,6 @@ select:focus {
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 2rem;
     align-items: center;
-    box-shadow: 0 0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.1), 0 -0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.1);
 }
 
 
@@ -230,6 +228,8 @@ select:focus {
     color: #333;
 }
 
+/** REVIEW **/
+
 #reviews {
     background-color: #f9f9f9;
     padding: 2rem 0;
@@ -254,7 +254,7 @@ select:focus {
     padding: 2rem;
     background-color: #fff;
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
 }
 
 .user-logo {
