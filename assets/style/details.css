@@ -1,31 +1,33 @@
 @import url(./reset.css);
 
 :root {
-    --app-text-horse-color: #d88c00;
+    --app-general-text-h2-color: #d88c00;
     --app-button-background-color: #000;
+
 }
 
 section {
     padding: 5rem 0;
+    box-shadow: #333 0 0 0.1rem;
 }
 
 .product-detail {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(43rem, 1fr));
     place-items: center;
     gap: 2rem;
+    background-color: #dddddd;
+    border-radius:1rem;
+    padding: 2rem;
+    box-shadow: #000000 0 0 0.5rem;
 }
-
 
 /** left content **/
     
 .left-content img {
-    width: 50rem;
-    height: 40rem;
-    border: 1px solid #cccccc;
+    width: 100%;
+    height: 100%;
 }
-
-
 
 /** right content **/
 
@@ -33,10 +35,10 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    border: #333 solid 1px;
-    width: 100%;
+    width: 50rem;
     padding: 2rem;
     height: 100%;
+    width: 100%;
 }
 
 .right-content h2 {
@@ -50,7 +52,7 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    
+    padding: 2.5rem;
 }
 
 .star-price .stars{
@@ -68,7 +70,7 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 div.basic-list-details ul li {
@@ -108,11 +110,11 @@ div.basic-list-details ul li {
 /** Place Order **/
 
 .place-order {
-    /* posisionando o botao na parte inferior direita */
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+    padding: 2.5rem;
 }
 
 .place-order button {
@@ -129,28 +131,56 @@ div.basic-list-details ul li {
 
 .specific-details{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 4rem;
     align-items: center;
 }
 
 /** description **/
 
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.description h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.description p {
+    font-size: 1.5rem;
+}
 
 /** details **/
 
 .details {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 2rem;
     align-items: center;
 }
 
 .technical-details, .general-details {
     width: 100%;
-    border: #333 solid 1px;
 }
 
+.technical-details  {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 4rem;
+}
+
+.technical-details ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 4rem;
+}
 
 /** general-details **/
 
@@ -178,8 +208,4 @@ div.basic-list-details ul li {
     font-size: 1.5rem;
     font-weight: 500;
     color: #333;
-}
-
-.general-details .horse h2 {
-    color: var(--app-text-horse-color);
 }
