@@ -1,17 +1,18 @@
+* {
+  outline: auto;
+}
+
 .hero-banner {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-  margin-top: 15rem;
-  flex-direction: row; /* Side-by-side layout for large screens */
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6rem;
 }
 
 .Luxury-vehicles-title {
   text-align: left;
   position: absolute;
-  width: 100%;
   top: 20px;
    left: 7rem;
    color: #000;
@@ -21,19 +22,19 @@
 .hero-image-container {
   position: relative;
   width: 60%;
-  height: auto; /* Maintain the aspect ratio of the image */
   order: 2; 
   background-image: radial-gradient(circle at top, #ffffff 60%, rgba(95, 153, 143,0.15));
   border-radius: 8px; /* Optional: if you want rounded corners */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.01); /* Horizontal offset, vertical offset, blur radius, color */
   bottom: 6rem;
   background-position: left top;
+  display: flex;
+  justify-content: center;
 }
 .hero-image {
   width: 80%;
-  height: 100%; /* Maintain the aspect ratio of the image */
-  display:flex; /* Ensure the image doesn't have any inline spacing */
- margin-left: 10rem;
+  height: 100%; 
+  display:flex;
  margin-bottom: -20rem;
  padding-bottom: 5rem;
 }
@@ -91,19 +92,14 @@ p{
 
 .specs {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  justify-content: flex-start; /* Align items to the left */
-  position: relative;
-  right: 25px;
-  top: 30px;
-  
-  
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 .spec-item {
   text-align: center;
-  margin: 0 20px; /* This adds 20 pixels of margin on the left and right of each item */
+  /* margin: 0 20px;  */
 
   
 }
@@ -124,35 +120,28 @@ p{
 
 .car-offers {
   background-color: #fff;
-  text-align: center;
-  padding: 50px;
+
 }
 
 .car-offers-title h2{
-  width: 400px; /* Adjust width to your needs */
-  white-space: pre-wrap; /* Allows text to wrap */
-  overflow-wrap: break-word;
   color: #000;
-  font-size: 2.2em;
+  font-size: 3.5rem;
+  text-align: center;
 }
+
 .car-offers .heading p {
   color: #555;
-  font-size: 1em; /* Adjust size as needed */
+  font-size: 1em;
   margin-bottom: 20px;
 }
 
-
-
 .car-list {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px; /* Adjust gap as needed */
+  justify-content: space-evenly;
 }
 
 .car-item {
-  padding: 20px;
-  width: 300px; /* Adjust width as needed */
+  width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.0); /* Adjust shadow as needed */
   margin-bottom: 20px;
@@ -173,7 +162,7 @@ p{
 .car-item h3 {
   color: #333;
   font-size: 1.5em; /* Adjust size as needed */
-  margin: 10px 0;
+  /* margin: 10px 0; */
   text-align: left;
   white-space: nowrap;
 }
@@ -219,20 +208,20 @@ p{
 }
 
 .card-title {
-  margin: 16px;
+  /* margin: 16px; */
   font-size: 24px;
   color: #333;
 }
 
 .card-price {
-  margin: 0 16px;
+  /* margin: 0 16px; */
   font-size: 18px;
   color: #e84c3d;
   font-weight: bold;
 }
 
 .card-description {
-  margin: 16px;
+  /* margin: 16px; */
   font-size: 14px;
   color: #555;
 }
@@ -255,9 +244,9 @@ p{
   
 }
 .card-info-item:not(:last-child) {
-  border-right: 1px solid #ccc; /* Adjust color as needed */
-  padding-right: 15px; /* Add padding to space out the text from the border */
-  margin-right: 5px; /* Add margin to space out the borders from each other */
+  border-right: 1px solid #ccc;
+  padding-right: 15px; 
+  /* margin-right: 5px;  */
   
 }
 .card-info-item:not(:first-child) {
@@ -275,7 +264,7 @@ p{
 
 @media (max-width: 600px) {
   .card {
-      margin: 20px;
+      /* margin: 20px; */
       width: calc(100% - 40px);
   }
 }
