@@ -157,11 +157,10 @@ p{
 }
 
 .car-item {
-  background-color: #f3f3f3; /* Adjust to the exact color using a color picker */
   padding: 20px;
   width: 250px; /* Adjust width as needed */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adjust shadow as needed */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.0); /* Adjust shadow as needed */
   margin-bottom: 20px;
 }
 
@@ -175,6 +174,13 @@ p{
   color: #333;
   font-size: 1.5em; /* Adjust size as needed */
   margin: 10px 0;
+  text-align: left;
+  white-space: nowrap;
+}
+.card-rating {
+  color: #FFD700; /* gold color */
+  font-size: 24px; /* larger size for visibility */
+  margin: 0 16px 16px; /* some margin for spacing */
 }
 
 .car-item .price {
@@ -198,6 +204,66 @@ p{
 
 .car-info li {
   margin-bottom: 5px;
+}
+.card {
+  width: 277px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+}
+
+.card-title {
+  margin: 16px;
+  font-size: 24px;
+  color: #333;
+}
+
+.card-price {
+  margin: 0 16px;
+  font-size: 18px;
+  color: #e84c3d;
+  font-weight: bold;
+}
+
+.card-description {
+  margin: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-info {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border: 0.05px solid #eeebeb; /* Adjust the color #ccc to match the desired border color */
+  border-radius: 8px; /* Adjust the value to match the desired border radius */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.02); /* This adds a shadow to the card, as seen in the image */
+  overflow: hidden;
+}
+
+.card-info-item .info-title {
+  display: block;
+  font-size: 12px;
+  color: #181717;
+}
+
+.info {
+  font-size: 14px;
+  color: #807878;
+}
+
+/* Example of responsive design */
+@media (max-width: 600px) {
+  .card {
+      margin: 20px;
+      width: calc(100% - 40px);
+  }
 }
 
 @media (max-width: 768px) {
