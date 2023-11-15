@@ -1,0 +1,8 @@
+041e575 (HEAD -> bachar-branch, origin/bachar-branch) add CSS style for the hero-banner
+a0c141f Merge branch 'bachar-branch' of https://github.com/marcelolop/premium-luxury-vehicles into bachar-branch
+141638c (origin/main, origin/HEAD, main) Create assets dir, Create index.css, Add css and js links to index.html
+0bfda24 Change index.css to reset.css
+4dacd01 Upload CSS Reset properties
+1fc5a7b the first change for bachar
+7b4185c basic structure started
+4aed263 start project
