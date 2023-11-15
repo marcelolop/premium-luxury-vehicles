@@ -4,28 +4,30 @@
 /   Discount offer   /
 /////////////////////*/
 
-.discount-offer {
-    width: 100%;
-    height: 55rem;
-    background-color: rgb(244, 244, 231);
+.flex-container {
     display: flex;
-    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
 }
 
-.discount-offer-text-part {
-    /* width: 50%; */
-    /* height: 100%; */
-    /* align-items: center; */
-    /* margin:0 10%; */
-    /* display: block; */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    /* box-sizing: border-box; */
+@media (max-width: 870px) {
+    .flex-container {
+        flex-direction: column-reverse;
+    }
+}
+
+.discount-offer {
+    background-color: rgb(241, 241, 218);
+    gap: 2rem;
+}
+
+.discount-offer-car-image-div , .discount-offer-text-part {
+    flex: 1;
+    height: 100%;
+    border: 1px solid #000;
 }
 
 .discount-offer-h2-for-text  {
-    width: 90%;
     font-size: 5rem;
     font-weight: bolder;
 }
@@ -35,10 +37,7 @@
 }
 
 .discount-offer-discover-more-button-div {
-    width: 100%;
-    height: 6rem;
     margin: 2rem 0;
-    /* display: flex; */
 }
 
 .discount-offer-discover-more-button {
@@ -53,27 +52,12 @@
     padding: 4px 8px;
 }
 
-.discount-offer-car-image-div {
-    height: 30%;
-    width: 100%;
-    transform: scale(1.5);
-    align-items: center;
-    margin-left: 4rem;
-    line-height: 55rem;
-}
-
-/* .discount-offer-car-image {
-    min-width: 30rem;
-} */
-
 .discount-offer-car-stats , .sports-car-stats {
-    width: 50rem;
+    width: 100%;
     height: 5rem;
-    /* align-items: center; */
 }
 
 .discount-offer-car-stats tbody , .discount-offer-car-stats thead , .sports-car-stats tbody, .sports-car-stats thead {
-    align-items: center;
     text-align: left;
 }
 
@@ -95,22 +79,14 @@
     width: 100%;
     height: 55rem;
     background-color: rgb(235, 227, 199);
-    /* display: block; */
     align-items: center;
     display: flex;
 }
 
-/* .sports-car-road-gradient {
-    height: 100%;
-    width: 1rem;
-    background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
-    right: 1rem;
-} */
-
 .sports-car-text-part {
     width: 50%;
     height: 100%;
-    display: grid;
+    display: flex;
     flex-direction: column;
 } 
 
@@ -176,23 +152,17 @@
     display: grid;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .discount-offer , .sports-car {
-        height: 110rem;
         display: flex;
-        flex-direction: column;
-        /* flex-wrap: wrap; */
     }
+
 
     .discount-offer-car-image-div , .discount-offer-text-part {
-        /* width: 100%; */
-        display: flex;
-        flex-direction: column;
+        width: 100%;
     }
-} 
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr); 
-    gap: 2rem;
-}
+    .sports-car-image-div , .sports-car-text-part {
+        width: 100%;
+    }
+}  */
