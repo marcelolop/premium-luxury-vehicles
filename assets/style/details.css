@@ -121,16 +121,16 @@ select:focus {
     padding: 1rem 3rem;
     border: 0.1rem solid var(--app-button-background-color);
     border-radius: 0.5rem;
-    background-color: var(--app-button-background-color);
-    color: #fff;
+    background-color: #f0d400;
+    color: #000;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .rent button:hover {
     cursor: pointer;
-    background-color: #fff;
-    color: var(--app-button-background-color);
+    background-color: var(--app-button-background-color);
+    color: #fff;
     transition: 0.5s ease-in-out;
 }
 
