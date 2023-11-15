@@ -287,3 +287,11 @@ footer a {
   color: #000;
   transition: all 0.3s ease-in-out;
 }
+
+.discover-more-btn:hover {
+  background-color: #ffe931;
+  border: 0.1rem solid #000;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: #000;
+}
