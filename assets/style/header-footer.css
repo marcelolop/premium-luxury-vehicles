@@ -112,3 +112,19 @@ footer a {
   align-items: center;
   gap: 4rem;
 }
+
+@media (max-width: 668px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .authors {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}
