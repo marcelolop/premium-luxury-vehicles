@@ -9,52 +9,36 @@
     height: 55rem;
     background-color: rgb(244, 244, 231);
     display: flex;
-}
-
-/* .discount-offer-road {
-    border-left: 1.5rem solid rgb(241, 217, 100);
-    border-right: 1.5rem solid rgb(241, 217, 100);
-    width: 10rem;
-    height: 100%;
-    /* top: 0; */
-    /* right: 10%; */
-    /* z-index: 1; 
-}
-
-.discount-offer-middle-line-road {
-    width: 4.25rem;
-    height: 100%;
-    border-right: 1.5rem dashed #fff;
-}
-
-.discount-offer-road , .discount-offer-middle-line-road {
-    flex: 1;
-    display: flex; 
-}*/
-
-.discount-offer-road-gradient {
-    height: 100%;
-    width: 1rem;
-    background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
-    right: 1rem;
+    /* flex-direction: column; */
 }
 
 .discount-offer-text-part {
-    width: 20%;
-    height: 100%;
+    /* width: 50%; */
+    /* height: 100%; */
     /* align-items: center; */
-    margin:0 10%;
-    display: grid;
+    /* margin:0 10%; */
+    /* display: block; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* box-sizing: border-box; */
 }
 
 .discount-offer-h2-for-text  {
     width: 90%;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: bolder;
 }
 
 .discount-offer-text {
-    width: 55rem;
+    margin: 5rem 0;
+}
+
+.discount-offer-discover-more-button-div {
+    width: 100%;
+    height: 6rem;
+    margin: 2rem 0;
+    /* display: flex; */
 }
 
 .discount-offer-discover-more-button {
@@ -66,15 +50,21 @@
     line-height: 4rem;
     font-size: 2rem;
     border-radius: 7px;
+    padding: 4px 8px;
 }
 
-.discount-offer-car-image {
-    width: 80rem; 
-    height: auto;
-    margin-left: 10%;
-    /* flex: 1; */
-    display: block;
-} 
+.discount-offer-car-image-div {
+    height: 30%;
+    width: 100%;
+    transform: scale(1.5);
+    align-items: center;
+    margin-left: 4rem;
+    line-height: 55rem;
+}
+
+/* .discount-offer-car-image {
+    min-width: 30rem;
+} */
 
 .discount-offer-car-stats , .sports-car-stats {
     width: 50rem;
@@ -105,31 +95,41 @@
     width: 100%;
     height: 55rem;
     background-color: rgb(235, 227, 199);
+    /* display: block; */
+    align-items: center;
     display: flex;
 }
 
-.sports-car-road-gradient {
+/* .sports-car-road-gradient {
     height: 100%;
     width: 1rem;
     background: linear-gradient(to bottom, #0e0d0d, #0e0d0d);
     right: 1rem;
-}
+} */
 
 .sports-car-text-part {
-    width: 20%;
+    width: 50%;
     height: 100%;
-    margin:0 10%;
     display: grid;
-}
+    flex-direction: column;
+} 
 
 .sports-car-h2-for-text  {
-    width: 100%;
+    width: 150%;
+    height: 30%;
     font-size: 6rem;
     font-weight: bolder;
+    margin-bottom: 4rem;
 }
 
 .sports-car-text {
-    width: 55rem;
+    margin: 5rem 0;
+}
+
+.sports-car-discover-more-button-div {
+    width: 100%;
+    height: 6rem;
+    margin: 2rem 0;
 }
 
 .sports-car-discover-more-button {
@@ -141,12 +141,58 @@
     line-height: 4rem;
     font-size: 2rem;
     border-radius: 7px;
+    padding: 4px 8px;
 }
 
-.sports-car-car-image {
-    /* width: 80rem;  */
-    margin-left: 5%;
-    height: 90%;
+.sports-car-image {
+    /* height: 100%; */
+    width: 100%;
+    line-height: 100%;
     align-items: center;
-    display: block;
+    /* margin: 0 auto 0 0; */
+    display: grid;
+    font-size: 6rem;
+    transform: scale(2.5);
+}
+
+.sports-car-image , .sports-car-text-part {
+    max-width: 50%;
+}
+
+.sports-car-stats {
+    height: 30%;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 7rem; */
+    /* line-height: 50%; */
+}
+
+.sports-car-image-div {
+    /* flex: 1; */
+    height: 100%;
+    width: 100%;
+    /* line-height: 55rem; */
+    align-items: center;
+    display: grid;
+}
+
+@media (max-width: 1200px) {
+    .discount-offer , .sports-car {
+        height: 110rem;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .discount-offer-car-image-div , .discount-offer-text-part {
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+    }
 } 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr); 
+    gap: 2rem;
+}
