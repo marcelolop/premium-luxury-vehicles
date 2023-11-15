@@ -1,4 +1,4 @@
-@import url('./reset.css');
+
 
 
 
@@ -26,13 +26,16 @@
   height: auto; /* Maintain the aspect ratio of the image */
   order: 2; 
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(86, 189, 214,0.2));
+  border-radius: 8px; /* Optional: if you want rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.01); /* Horizontal offset, vertical offset, blur radius, color */
 
 }
 .hero-image {
-  width: 70%;
-  height: auto; /* Maintain the aspect ratio of the image */
+  width: 80%;
+  height: 500px; /* Maintain the aspect ratio of the image */
   display: block; /* Ensure the image doesn't have any inline spacing */
  margin-left: 10rem;
+ 
 }
 
 
@@ -47,14 +50,26 @@ p{
   font-size: 15px;
 }
 
+.thumbnail-container{
+  background-color: rgb(235, 100, 76);
+  width: 100px; /* Adjust as necessary */
+  height: auto;
+  border-radius: 8px; /* Optional: if you want rounded corners */
+  margin-bottom: 10px;
 
+}
 .thumbnail {
   width: 100px; /* Adjust as necessary */
   height: auto;
   border-radius: 8px; /* Optional: if you want rounded corners */
   margin-bottom: 10px;
+  position: relative;
+  bottom:1rem ;
+  left: 1rem;
 }
-
+.description{
+  margin: 25px 0px;
+}
 .explore-button {
   background-color: #ffcc00; /* Bright color for the button */
   color: #000;
@@ -63,7 +78,13 @@ p{
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  cursor: pointer; /* Changes the cursor on hover */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+    border-radius: 5px; /* Rounds the corners of the button */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
 }
 
 .explore-button:hover {
@@ -71,10 +92,111 @@ p{
 }
 
 .specs {
-  color: #333; /* Text color for the specs */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  position: relative;
+  right: 25px;
+  top: 30px;
+  
+  
 }
 
-.specs div {
+.spec-item {
+  text-align: center;
+  margin: 0 20px; /* This adds 20 pixels of margin on the left and right of each item */
+
+  
+}
+
+.spec-item h3 {
+  color: #333; /* Change to desired heading color */
+  margin-bottom: 5px;
+}
+
+.spec-item p {
+  color: #000; /* Change to desired text color */
+  font-size: 1.5em; /* Adjust the size as needed */
+  font-weight: bold;
+}
+.spec-item:last-child {
+  margin-right: 0;
+}
+
+.car-offers {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+.car-offers .heading h2 {
+  color: #000;
+  font-size: 2em; /* Adjust size as needed */
+}
+
+.car-offers .heading p {
+  color: #555;
+  font-size: 1em; /* Adjust size as needed */
+  margin-bottom: 20px;
+}
+
+.btn-see-more {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.car-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap as needed */
+}
+
+.car-item {
+  background-color: #f3f3f3; /* Adjust to the exact color using a color picker */
+  padding: 20px;
+  width: 250px; /* Adjust width as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adjust shadow as needed */
+  margin-bottom: 20px;
+}
+
+.car-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.car-item h3 {
+  color: #333;
+  font-size: 1.5em; /* Adjust size as needed */
+  margin: 10px 0;
+}
+
+.car-item .price {
+  color: #e84c3d; /* Adjust to the exact color using a color picker */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.car-item p {
+  color: #555;
+  font-size: 1em; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.car-info {
+  list-style: none;
+  padding: 0;
+  color: #555;
+  font-size: 0.9em; /* Adjust size as needed */
+}
+
+.car-info li {
   margin-bottom: 5px;
 }
 
