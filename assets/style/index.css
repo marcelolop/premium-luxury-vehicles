@@ -4,15 +4,23 @@
 /   Discount offer   /
 /////////////////////*/
 
-.flex-container {
+.discount-offer-flex-container , .sports-car-flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 @media (max-width: 870px) {
-    .flex-container {
+    .discount-offer-flex-container {
         flex-direction: column-reverse;
+    }
+
+    .sports-car-flex-container {
+        flex-direction: column;
+    }
+
+    .sports-car-image-div{ 
+        margin-right: 0;
     }
 }
 
@@ -24,7 +32,6 @@
 .discount-offer-car-image-div , .discount-offer-text-part {
     flex: 1;
     height: 100%;
-    border: 1px solid #000;
 }
 
 .discount-offer-h2-for-text  {
@@ -55,6 +62,7 @@
 .discount-offer-car-stats , .sports-car-stats {
     width: 100%;
     height: 5rem;
+    margin-bottom: 5rem;
 }
 
 .discount-offer-car-stats tbody , .discount-offer-car-stats thead , .sports-car-stats tbody, .sports-car-stats thead {
@@ -76,26 +84,26 @@
 /////////////////////*/
 
 .sports-car {
-    width: 100%;
-    height: 55rem;
-    background-color: rgb(235, 227, 199);
-    align-items: center;
-    display: flex;
+    background-color: rgb(236, 227, 197);
+    gap: 2rem;
 }
 
-.sports-car-text-part {
-    width: 50%;
+.sports-car-image {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-} 
+    width: 100%;
+}
+.sports-car-image-div{ 
+    margin-right: 4rem;
+}
+
+.sports-car-image-div , .sports-car-text-part {
+    flex: 1;
+    height: 100%;
+}
 
 .sports-car-h2-for-text  {
-    width: 150%;
-    height: 30%;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: bolder;
-    margin-bottom: 4rem;
 }
 
 .sports-car-text {
@@ -103,15 +111,13 @@
 }
 
 .sports-car-discover-more-button-div {
-    width: 100%;
-    height: 6rem;
     margin: 2rem 0;
 }
 
 .sports-car-discover-more-button {
     width: 20rem;
     height: 4rem;
-    border: 1.5px solid #0e0d0d;  
+    border: 2px solid #0f0f0f;
     color:#0e0d0d;
     text-align: center;
     line-height: 4rem;
@@ -119,50 +125,3 @@
     border-radius: 7px;
     padding: 4px 8px;
 }
-
-.sports-car-image {
-    /* height: 100%; */
-    width: 100%;
-    line-height: 100%;
-    align-items: center;
-    /* margin: 0 auto 0 0; */
-    display: grid;
-    font-size: 6rem;
-    transform: scale(2.5);
-}
-
-.sports-car-image , .sports-car-text-part {
-    max-width: 50%;
-}
-
-.sports-car-stats {
-    height: 30%;
-    align-items: center;
-    text-align: center;
-    /* margin-top: 7rem; */
-    /* line-height: 50%; */
-}
-
-.sports-car-image-div {
-    /* flex: 1; */
-    height: 100%;
-    width: 100%;
-    /* line-height: 55rem; */
-    align-items: center;
-    display: grid;
-}
-
-/* @media (max-width: 1200px) {
-    .discount-offer , .sports-car {
-        display: flex;
-    }
-
-
-    .discount-offer-car-image-div , .discount-offer-text-part {
-        width: 100%;
-    }
-
-    .sports-car-image-div , .sports-car-text-part {
-        width: 100%;
-    }
-}  */
