@@ -11,13 +11,16 @@ section {
     padding: 5rem 0;
 }
 
+/** PRODUCT SECTION **/
+
 #product{
     background-color: #f9f9f9;
+    box-shadow: 0 0.1rem 0.1rem #0000001a;
 }
 
 .product-detail {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     place-items: center;
     gap: 2rem;
     padding: 2rem;
@@ -29,6 +32,8 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem #0000001a;
 }
 
 /** right content **/
@@ -44,26 +49,26 @@ section {
 }
 
 .right-content h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
-    color: #333;
+    color: #000;
 }
 
 .star-rating .stars{
-    color: #f2e600;
-    font-size: 2rem;
+    color: #BD7032;
+    font-size: 2.5rem;
 }
 
 .star-rating .stars p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
 }
 
-.price h3 {
-    font-size: 2.5rem;
+.price h2 {
+    font-size: 3rem;
     font-weight: 500;
-    color: #b7686e;
+    color: #E84C3D;
 }
 
 .basic-list-details {
@@ -77,39 +82,48 @@ section {
 
 .basic-list-details th,
 .basic-list-details td {
-    padding: 8px;
-    border: 1px solid #ddd;
+    padding: 0.8rem;
+    border: 0.1rem solid #ddd;
     text-align: center;
 }
 
 .basic-list-details th {
     background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.basic-list-details th {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.basic-list-details td {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #000;
 }
 
 .color-options label {
     margin-right: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    color: #333;
+    color: #000;
 }
+
 
 select {
     padding: 1rem;
-    border: 0.1rem solid #cccccc;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #333;
-    line-height: 3rem;
 }
 
 select:focus {
     outline: 0.1rem solid var(--app-button-background-color);
 }
 
-/** rent **/
+/** place-order **/
 
-.rent {
+.place-order {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -117,26 +131,27 @@ select:focus {
     padding: 2.5rem;
 }
 
-.rent button {
+.place-order button {
     padding: 1rem 3rem;
-    border: 0.1rem solid var(--app-button-background-color);
+    border: none;
     border-radius: 0.5rem;
     background-color: #f0d400;
     color: #000;
     font-size: 1.5rem;
     font-weight: 700;
-}
-
-.rent button:hover {
     cursor: pointer;
-    background-color: var(--app-button-background-color);
-    color: #fff;
-    transition: 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.rent button:active {
+.place-order button:hover {
+    background-color: #ffd700;
+    color: #fff;
+}
+
+.place-order button:active {
     transform: scale(0.98);
 }
+
 /** SPECIFIC-DETAILS SECTIONS **/
 
 .specific-details{
@@ -159,14 +174,14 @@ select:focus {
 .description h2 {
     font-size: 3rem;
     font-weight: 700;
-    color: #333;
+    color: #000;
     margin-bottom: 2rem;
 }
 
 .description p {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #333;
+    color: #000;
 }
 
 .description p:last-child {
@@ -189,7 +204,7 @@ select:focus {
 .technical-details  {
     font-size: 2rem;
     font-weight: 500;
-    color: #333;
+    color: #000;
     line-height: 4rem;
 }
 
@@ -197,7 +212,7 @@ select:focus {
     list-style: none;
     font-size: 1.5rem;
     font-weight: 500;
-    color: #333;
+    color: #000;
     line-height: 4rem;
 }
 
@@ -219,13 +234,13 @@ select:focus {
 .general-text h2 {
     font-size: 4rem;
     font-weight: 700;
-    color: #333;
+    color: #000;
 }
 
 .general-text span {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #333;
+    color: #000;
 }
 
 /** REVIEW **/
@@ -238,7 +253,7 @@ select:focus {
 #reviews h2 {
     font-size: 3rem;
     font-weight: 700;
-    color: #333;
+    color: #000;
     margin-bottom: 2rem;
 }
 
@@ -266,6 +281,9 @@ select:focus {
 
 .review-content {
     flex-grow: 1;
+    /* Add the following styles for better readability */
+    padding-left: 2rem;
+    border-left: 0.2rem solid #ccc;
 }
 
 .user-name {
@@ -280,26 +298,9 @@ select:focus {
 }
 
 .user-review {
-    color: #333;
-}
-
-@media (max-width: 600px) {
-    .basic-list-details table {
-      width: 100%;
-    }
-
-    .basic-list-details th,
-    .basic-list-details td {
-      font-size: 14px;
-    }
-
-    .review-item {
-        flex-direction: column;
-    }
-
-    .user-logo {
-        margin: 0 auto 2rem;
-    }
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 /** hero banner **/
