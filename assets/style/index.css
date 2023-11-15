@@ -12,13 +12,14 @@
 }
 
 .Luxury-vehicles-title {
-  font-size: 2em;
-  color: #333; /* Adjust the color to match the screenshot */
   text-align: left;
   position: absolute;
   width: 100%;
   top: 20px;
-   left: 40px;
+   left: 7rem;
+   color: #000;
+   font-size: 2.5em;
+   
 }
 .hero-image-container {
   position: relative;
@@ -45,6 +46,7 @@ section.hero-banner .circla-label img{
   position: absolute;
   left: -30px;
   bottom:-25px ;
+  width: 12rem;
 }
 p{
   font-size: 15px;
@@ -52,15 +54,15 @@ p{
 
 .thumbnail-container{
   background-color: rgb(235, 100, 76);
-  width: 100px; /* Adjust as necessary */
+  width: 150px; /* Adjust as necessary */
   height: auto;
   border-radius: 8px; /* Optional: if you want rounded corners */
   margin-bottom: 10px;
 
 }
 .thumbnail {
-  width: 100px; /* Adjust as necessary */
-  height: auto;
+  width: 150px; /* Adjust as necessary */
+  height: 120px;
   border-radius: 8px; /* Optional: if you want rounded corners */
   margin-bottom: 10px;
   position: relative;
@@ -130,24 +132,20 @@ p{
   padding: 50px;
 }
 
-.car-offers .heading h2 {
+.car-offers-title h2{
+  width: 400px; /* Adjust width to your needs */
+  white-space: pre-wrap; /* Allows text to wrap */
+  overflow-wrap: break-word;
   color: #000;
-  font-size: 2em; /* Adjust size as needed */
+  font-size: 2.2em;
 }
-
 .car-offers .heading p {
   color: #555;
   font-size: 1em; /* Adjust size as needed */
   margin-bottom: 20px;
 }
 
-.btn-see-more {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
+
 
 .car-list {
   display: flex;
@@ -158,7 +156,7 @@ p{
 
 .car-item {
   padding: 20px;
-  width: 250px; /* Adjust width as needed */
+  width: 300px; /* Adjust width as needed */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.0); /* Adjust shadow as needed */
   margin-bottom: 20px;
@@ -169,7 +167,13 @@ p{
   height: auto;
   border-radius: 10px;
 }
-
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  margin-top: 16px;
+}
 .car-item h3 {
   color: #333;
   font-size: 1.5em; /* Adjust size as needed */
@@ -179,8 +183,8 @@ p{
 }
 .card-rating {
   color: #FFD700; /* gold color */
-  font-size: 24px; /* larger size for visibility */
-  margin: 0 16px 16px; /* some margin for spacing */
+  font-size: 18px; /* larger size for visibility */
+  margin-bottom: 7px;
 }
 
 .car-item .price {
@@ -245,17 +249,31 @@ p{
   border-radius: 8px; /* Adjust the value to match the desired border radius */
   box-shadow: 0 4px 8px rgba(0,0,0,0.02); /* This adds a shadow to the card, as seen in the image */
   overflow: hidden;
+  text-align: center;
 }
 
 .card-info-item .info-title {
-  display: block;
+  display:  block;
   font-size: 12px;
   color: #181717;
+  
 }
-
+.card-info-item:not(:last-child) {
+  border-right: 1px solid #ccc; /* Adjust color as needed */
+  padding-right: 15px; /* Add padding to space out the text from the border */
+  margin-right: 5px; /* Add margin to space out the borders from each other */
+  
+}
+.card-info-item:not(:first-child) {
+  position: relative;
+  right: 20px;
+  
+}
 .info {
-  font-size: 14px;
-  color: #807878;
+  font-size:  16px;
+  color: #000000;
+  font-weight: bold;
+  
 }
 
 /* Example of responsive design */
