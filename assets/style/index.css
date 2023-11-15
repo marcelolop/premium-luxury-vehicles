@@ -1,6 +1,5 @@
-* {
-  outline: auto;
-}
+@import url(./reset.css);
+
 
 .hero-banner {
   display: flex;
@@ -307,8 +306,6 @@ p{
   }
 }
 
-@import url(./reset.css);
-
 header {
   background-color: #fff;
 }
@@ -600,4 +597,129 @@ footer a {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   color: #000;
+}
+/*////////////////////
+/   Discount offer   /
+/////////////////////*/
+
+.discount-offer-flex-container , .sports-car-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 870px) {
+    .discount-offer-flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .sports-car-flex-container {
+        flex-direction: column;
+    }
+
+    .sports-car-image-div{ 
+        margin-right: 0;
+    }
+}
+
+.discount-offer {
+    background-color: rgb(241, 241, 218);
+    gap: 2rem;
+}
+
+.discount-offer-car-image-div , .discount-offer-text-part {
+    flex: 1;
+    height: 100%;
+}
+
+.discount-offer-h2-for-text  {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.discount-offer-text {
+    margin: 5rem 0;
+}
+
+.discount-offer-discover-more-button-div {
+    margin: 2rem 0;
+}
+
+.discount-offer-discover-more-button {
+    width: 20rem;
+    height: 4rem;
+    background-color: rgb(239, 239, 38);
+    color:#0e0d0d;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    border-radius: 7px;
+    padding: 4px 8px;
+}
+
+.discount-offer-car-stats , .sports-car-stats {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 5rem;
+}
+
+.discount-offer-car-stats tbody , .discount-offer-car-stats thead , .sports-car-stats tbody, .sports-car-stats thead {
+    text-align: left;
+}
+
+.discount-offer-car-stats th, .discount-offer-car-stats td , .sports-car-stats th , .sports-car-stats td {
+    width: 33%;
+    height: 50%;
+}
+
+.discount-offer-car-stats tbody , .sports-car-stats tbody {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+/*/////////////////////
+/   Sport car offer   /
+/////////////////////*/
+
+.sports-car {
+    background-color: rgb(236, 227, 197);
+    gap: 2rem;
+}
+
+.sports-car-image {
+    height: 100%;
+    width: 100%;
+}
+.sports-car-image-div{ 
+    margin-right: 4rem;
+}
+
+.sports-car-image-div , .sports-car-text-part {
+    flex: 1;
+    height: 100%;
+}
+
+.sports-car-h2-for-text  {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.sports-car-text {
+    margin: 5rem 0;
+}
+
+.sports-car-discover-more-button-div {
+    margin: 2rem 0;
+}
+
+.sports-car-discover-more-button {
+    width: 20rem;
+    height: 4rem;
+    border: 2px solid #0f0f0f;
+    color:#0e0d0d;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    border-radius: 7px;
+    padding: 4px 8px;
 }
