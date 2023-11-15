@@ -341,6 +341,7 @@ footer a {
   text-decoration: underline #d4d4d4;
   color: #1b1b1b;
 }
+
 @media (max-width: 668px) {
   .row {
     flex-direction: column;
