@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/style/details.css">
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/script/index.js" defer></script>
     <title>Azura Grand Sport Cxperience Concept</title>
 </head>
 <body>
@@ -29,6 +30,33 @@
         </div>
     </header>
     <main>
+        <div class="overlay"></div>
+        <div class="container">
+
+            <!-- Modal -->
+            <div class="modal">
+                <form class="sign-up-modal-container">
+                    <a class="sign-up-google" href="#">Sign up with Google</a>
+                    <a class="sign-up-apple" href="#">Sign up with Apple</a>
+                    <p>or</p>
+                    <div class="sign-up-email-password">
+                        <label for="email">Email:*</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <label for="password">Password:*</label>
+                        <input name="password" id="password" cols="30" rows="5" placeholder="Create a password"
+                            required></input>
+                    </div>
+                    <div class="terms-checkbox">
+                        <input type="checkbox" name="tc" id="tc">
+                        <label for="tc">I agree to the <a class="tc-link" href="#">terms and conditions</a></label>
+                    </div>
+                    <div class="have-account">
+                        <p>Already have an account? <a class="login-link" href="#">Login</a></p>
+                        <input id="sign-up-modal-btn" type="button" value="Sign Up" alt="Sign up button">
+                    </div>
+                </form>
+            </div>
+        </div>
         <section id="product">
             <div class="container product-detail">
                 <div class="left-content">
@@ -72,7 +100,7 @@
                         </select>
                     </div>
                     <div class="place-order">
-                        <button>Place Order</button>
+                        <button>Place </button>
                     </div>
                 </div>
             </div>
