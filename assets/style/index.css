@@ -424,17 +424,16 @@ section.hero-banner .circla-label img {
 
 .app-btn-global-type-x2 {
   background-color: #ffdb4d;
-  border: 0.2rem solid #ffdb4d;
+  border: 0.1rem solid #ffdb4d;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   color: #2b2626;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   font-weight: 600;
 }
 
 .app-btn-global-type-x2:hover {
-  border: 0.2rem solid #2b2626;
-  /* font-weight: 700; */
+  border: 0.1rem solid #2b2626;
 }
 
 .app-btn-global-type-x3 {
