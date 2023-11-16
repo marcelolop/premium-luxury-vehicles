@@ -13,7 +13,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-items: center;
   padding-top: 6rem;
 }
 
@@ -47,7 +46,6 @@ section {
   width: 80%;
   height: 100%;
   display: flex;
-  margin-bottom: -20rem;
   padding-bottom: 5rem;
 }
 
@@ -83,13 +81,10 @@ section.hero-banner .circla-label img {
 .explore-button {
   background-color: #ffcc00;
   color: #000;
-  border: none;
   padding: 10px 20px;
   font-weight: bold;
-  cursor: pointer;
   border-radius: 4px;
   margin-bottom: 25px;
-  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
@@ -608,7 +603,7 @@ section.hero-banner .circla-label img {
 
 .sports-car-discover-more-button {
   width: 20rem;
-  height: 4rem;
+  height: 10rem;
   border: 2px solid #0f0f0f;
   color: #0e0d0d;
   text-align: center;
