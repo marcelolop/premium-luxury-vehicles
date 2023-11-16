@@ -145,14 +145,21 @@ section.hero-banner .circla-label img {
 
 .car-list {
   display: flex;
-  justify-content: space-evenly;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  justify-items: center; 
+  grid-gap: 2rem;
 }
+  
 
 .car-item {
+  box-sizing: border-box;
+  text-align: center;
   width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .car-item img {
@@ -177,8 +184,10 @@ section.hero-banner .circla-label img {
 
 .card-rating {
   color: rgb(189, 112, 50);
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 7px;
+  
+
 }
 
 .car-item .price {
@@ -266,11 +275,7 @@ section.hero-banner .circla-label img {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
-  .card {
-    width: calc(100% - 40px);
-  }
-}
+
 
 @media (max-width: 1190px) {
   .hero-banner {
@@ -308,7 +313,32 @@ section.hero-banner .circla-label img {
     order: 3;
   }
 }
+@media (max-width: 1050px) {
+  .car-list {
+    grid-template-columns: repeat(2, 1fr); /* Adjusts to a two-column layout */
+    display: grid;
+  }
+  .car-offers-title h2 {
+    text-align: start;
+    padding-left: 4rem;
+  }
+  .car-item {
+   width: 90%;
+  }
+  .card-rating {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+}
 
+/* For screens smaller than 600px: 1 card in a row */
+@media (max-width: 600px) {
+  .car-list {
+    grid-template-columns: 1fr; /* Adjusts to a single-column layout */
+    justify-items: stretch;
+    justify-items: center;
+  }
+}
 .app-btn-global-type-x1 {
     background-color: #131212;
     border: 0.1rem solid  #131212;
