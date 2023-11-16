@@ -15,6 +15,7 @@ section {
   justify-content: space-between;
   align-items: center;
   padding-top: 6rem;
+  position: relative;
 }
 
 .luxury-vehicles-title {
@@ -81,6 +82,7 @@ section.hero-banner .circla-label img {
 }
 
 .explore-button {
+  align-items: center;
   background-color: #ffcc00;
   color: #000;
   border: none;
@@ -285,33 +287,123 @@ section.hero-banner .circla-label img {
 
   .hero-image-container {
     width: 100%;
+    padding:2rem;
   }
 
-  .circla-label img {
-    width: 20%;
-    right: 10%;
-    bottom: 10%;
+  section.hero-banner .circla-label img {
+    position: absolute;
+    left: -10px;
+    bottom: -2px;
+    width: 12rem;
+    
   }
-
+  .thumbnail-container {
+    width: 34rem;
+    height: 30rem; 
+    margin-left: 1rem;
+    align-items: flex-start;
+    
+  
+  }
+  
+  .thumbnail {
+    width: 34rem;
+    height: 30rem;
+   
+    
+   
+  }
+ 
   .cta {
-    width: 100%;
+    display: flex;
     order: 2;
+    /* Vertically centers the items if they are of different heights */
+    gap:100px ; 
+    height: 100px;
+    width: 100%;
+    margin-bottom: 12rem;
+   
+   
+    
+    
   }
-}
+  .description {
+    margin: 25px 0px;
+    font-size: 2rem;
+  }
+  .specs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .hero-banner .hero-banner-explantion{
+    justify-content: center;
+   
+    margin-left: 17rem;
+    
 
+   }
+}
+@media (max-width: 735px) {
+
+ 
+  .cta {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 45rem;
+    
+  }
+  .thumbnail-container {
+    width: 25rem;
+    height: 20rem;
+    
+    margin: 0 auto;
+ 
+    
+  
+  }
+  
+  .thumbnail {
+    width: 25rem;
+    height: 20rem;
+
+  
+   
+  }
+  .hero-banner .hero-banner-explantion{
+    margin:  auto auto;
+
+   }
+   .hero-banner .hero-banner-explantion .explore-button {
+    display: grid;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+   }
+}
 @media (max-width: 768px) {
   .hero-image-container {
     width: 100%;
+    height: 30dvh;
+    padding-top: 7rem;
   }
-
-  .circla-label img {
-    width: 10rem;
-    right: 5%;
-    bottom: 5%;
+  .luxury-vehicles-title {
+    font-size: 3rem;
+  }
+  .hero-image {
+    width: 80%;
+    height: 40rem;
+  }
+  section.hero-banner .circla-label img {
+    
+    left: -10px;
+    bottom: -2px;
+    width: 8rem;
   }
 
   .cta {
     order: 3;
+    
   }
 }
 @media (max-width: 1050px) {
@@ -319,8 +411,7 @@ section.hero-banner .circla-label img {
     grid-template-columns: repeat(2, 1fr); /* Adjusts to a two-column layout */
     display: grid;
   }
-  .car-offers-title h2 {
-  }
+ 
   .car-item {
    width: 90%;
   }
@@ -328,6 +419,11 @@ section.hero-banner .circla-label img {
     font-size: 16px;
     margin-bottom: 7px;
   }
+  /* .circla-label img {
+    width: 15%;
+    right: 10%;
+    bottom: 10%;
+  } */
 }
 
 /* For screens smaller than 600px: 1 card in a row */
