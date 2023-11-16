@@ -135,6 +135,7 @@ section.hero-banner .circla-label img {
   color: #000;
   font-size: 3.5rem;
   text-align: center;
+  margin-bottom: 7rem;
 }
 
 .car-offers .heading p {
@@ -184,7 +185,7 @@ section.hero-banner .circla-label img {
 
 .card-rating {
   color: rgb(189, 112, 50);
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 7px;
   
 
@@ -192,7 +193,7 @@ section.hero-banner .circla-label img {
 
 .car-item .price {
   color: #e84c3d;
-  font-size: 1.5em;
+  font-size: 1.15em;
   margin-bottom: 10px;
 }
 
@@ -319,8 +320,6 @@ section.hero-banner .circla-label img {
     display: grid;
   }
   .car-offers-title h2 {
-    text-align: start;
-    padding-left: 4rem;
   }
   .car-item {
    width: 90%;
