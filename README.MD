@@ -7,7 +7,7 @@ This project is a simple website for a fictional luxury car dealership. It is a 
 [Click here](https://marcelolop.github.io/premium-luxury-vehicles/) to see the demo of this project.
 
 ## Installation
-1. Clone the repository: `git clone [repository-url]`
+1. Clone the repository: `git clone https://github.com/marcelolop/premium-luxury-vehicles.git`
 2. Open the `index.html` file in your browser.
 
 ## Features
