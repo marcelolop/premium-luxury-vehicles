@@ -313,7 +313,7 @@ footer a {
 
 .valid {
   background-image: url(../media/icons/check-mark.png);
-  background-position-x: right 1rem;
+  background-position-x: 27rem;
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: 10%;

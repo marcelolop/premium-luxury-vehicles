@@ -57,3 +57,62 @@ onEvent("click", signUpBtn, openModal);
 onEvent("click", overlay, closeModal);
 
 onEvent("keyup", document, closeModalOnEsc);
+
+// ! Input Validation
+
+const email = select("#email");
+const password = select("#password");
+const signUpModalBtn = select("#sign-up-modal-btn");
+
+function validateEmail() {
+  const value = email.value.trim();
+  const isValid =
+    value.length > 6 &&
+    value.includes("@") &&
+    value.includes(".") &&
+    value.lastIndexOf(".") < value.length - 2 &&
+    !value.includes(" ");
+  return isValid;
+}
+
+function validatePassword() {
+  const value = password.value.trim();
+  const isValid = value.length > 5;
+  return isValid;
+}
+
+function validateForm() {
+  const isEmailValid = validateEmail();
+  const isPasswordValid = validatePassword();
+  const isFormValid = isEmailValid && isPasswordValid;
+  return isFormValid;
+}
+
+onEvent("input", email, () => {
+  if (validateEmail()) {
+    email.classList.add("valid");
+  } else {
+    email.classList.remove("valid");
+  }
+});
+
+onEvent("input", password, () => {
+  if (validatePassword()) {
+    password.classList.add("valid");
+  } else {
+    password.classList.remove("valid");
+  }
+});
+
+onEvent("click", signUpModalBtn, () => {
+  closeModal();
+  email.value = "";
+  password.value = "";
+  if (
+    email.classList.contains("valid") ||
+    password.classList.contains("valid")
+  ) {
+    email.classList.remove("valid");
+    password.classList.remove("valid");
+  }
+});
