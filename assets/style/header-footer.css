@@ -6,7 +6,7 @@ header {
   background-color: #fff;
 }
 
-.desktop-nav {
+.main-nav {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
@@ -14,22 +14,16 @@ header {
   padding: 3rem 0;
 }
 
-@media (max-width: 64.5rem) {
-  .pages {
-    display: none;
-  }
-}
-
-.desktop-nav h1 {
+.main-nav h1 {
   color: #000;
 }
 
-.pages a {
+.desktop-pages a {
   color: #000;
   padding: 1rem 2rem;
 }
 
-.pages a:last-child {
+.desktop-pages a:last-child {
   background-color: #000;
   border: 0.1rem solid transparent;
   border-radius: 0.5rem;
@@ -37,11 +31,26 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.pages a:last-child:hover {
+.desktop-pages a:last-child:hover {
   background-color: #fff;
   border-radius: 0.5rem;
   border: #000 0.1rem solid;
   color: #000;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-pages {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 2.5rem;
+  }
 }
 
 /* ! ------------------------------------------------------------------------ */
