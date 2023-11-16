@@ -131,19 +131,18 @@ select:focus {
 
 .place-order button {
     padding: 1rem 3rem;
-    border: none;
+    border: 0.1rem solid #ffdb4d;
+    background-color: #ffdb4d;
     border-radius: 0.5rem;
-    background-color: #f0d400;
     color: #000;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .place-order button:hover {
-    background-color: #ffd700;
-    color: #fff;
+    border: #000 0.1rem solid;
 }
 
 .place-order button:active {
@@ -254,6 +253,14 @@ select:focus {
     background-color: #f9f9f9;
     padding: 5rem 0;
     box-shadow: 0 -0.1rem 0.1rem #0000001a
+}
+
+#reviews a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem;
 }
 
 #reviews h2 {
