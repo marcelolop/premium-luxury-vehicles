@@ -500,7 +500,7 @@ section.hero-banner .circla-label img {
   gap: 3rem;
 }
 
-.brands-logos p {
+.brands-logos a {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
