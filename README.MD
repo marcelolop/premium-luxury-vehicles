@@ -20,4 +20,7 @@ This project is a simple website for a fictional luxury car dealership. It is a 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+## Screenshot
+![](https://github.com/marcelolop/premium-luxury-vehicles/blob/main/assets/media/img/Screenshot%202023-11-16%20105404.png?raw=true)
+
 Feel free to reach out for any questions or feedback!
