@@ -10,55 +10,22 @@ section {
 /* ! ------------------------------------------------------------------------ */
 
 .hero-banner {
+  width: 100%;
+  height: 85dvh;
+}
+
+.flex-hero-banner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 6rem;
 }
 
-.luxury-vehicles-title {
-  text-align: left;
-  position: absolute;
-  top: 20px;
-  left: 7rem;
-  color: #000;
-  font-size: 2.5em;
+.hero-banner-header {
+  width:100%;
+  height: 30%;
+  font-size: 6rem;
+  text-align: center;
 }
 
-.hero-image-container {
-  position: relative;
-  width: 60%;
-  order: 2;
-  background-image: radial-gradient(
-    circle at top,
-    #ffffff 60%,
-    rgba(95, 153, 143, 0.15)
-  );
-  border-radius: 8px; /* Optional: if you want rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.01); /* Horizontal offset, vertical offset, blur radius, color */
-  bottom: 6rem;
-  background-position: left top;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-image {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  margin-bottom: -20rem;
-  padding-bottom: 5rem;
-}
-
-section.hero-banner .circla-label img {
-  position: absolute;
-  left: -50px;
-  bottom: -25px;
-  width: 14rem;
-}
-
-.thumbnail-container {
+.hero-banner-small-image-container {
   background-color: rgb(235, 100, 76);
   width: 150px;
   height: auto;
@@ -66,70 +33,83 @@ section.hero-banner .circla-label img {
   margin-bottom: 10px;
 }
 
-.thumbnail {
-  width: 150px;
-  height: 120px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  position: relative;
-  bottom: 1rem;
-  left: 1rem;
+.hero-banner-text-part , .hero-banner-large-picture-div {
+  width: 50%;
 }
 
-.description {
-  margin: 25px 0px;
-}
-
-.explore-button {
-  background-color: #ffcc00;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 25px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease;
-}
-
-.explore-button:hover {
-  background-color: #e6b800;
-}
-
-.specs {
+.hero-banner-large-picture-div {
+  /* position: relative; */
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
+  /* box-sizing: content-box; */
 }
 
-.spec-item {
-  text-align: center;
+.hero-banner-image-of-the-car {
+    position: relative;
 }
 
-.spec-item h3 {
-  color: #333;
-  margin-bottom: 5px;
+.hero-banner-circle-label {
+  width: 30%;
+  height: 30%;
+  position: relative;
+  bottom:25%;
 }
 
-.spec-item p {
-  color: #000;
-  font-size: 1.5em;
-  font-weight: bold;
+.hero-banner-description {
+  font-size: 3rem;
+  margin: 2rem 0;
 }
 
-.spec-item:last-child {
-  margin-right: 0;
+.hero-banner-car-stats {
+  margin:2rem 0;
 }
+
+@media (max-width: 1200px) {
+  .flex-hero-banner {
+    flex-direction: column;
+  }
+
+  .hero-banner {
+    height: 170dvh;
+    overflow: hidden;
+  }
+
+  .hero-banner-text-part , .hero-banner-large-picture-div , .hero-banner-header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-banner-large-picture-div {
+    height: 50%;
+
+  }
+
+  /* .hero-banner-image-of-the-car {
+    display: flex;
+    width: 100%;
+    height: 100%;
+} */
+
+  .hero-banner-circle-label {
+    display: flex;
+    bottom:50%;
+    left:20%
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-banner {
+    height: 150dvh;
+  }
+}
+
+
+/* ! ------------------------------------------------------------------------ */
+/* ! Section car offers                                                      */
+/* ! ------------------------------------------------------------------------ */
 
 .car-offers {
   background-color: #fff;
-}
+} 
 
 .car-offers-title h2 {
   color: #000;
@@ -279,9 +259,10 @@ section.hero-banner .circla-label img {
 
   .hero-image-container {
     width: 100%;
+    height: 100%;
   }
 
-  .circla-label img {
+  .circle-label img {
     width: 20%;
     right: 10%;
     bottom: 10%;
@@ -298,7 +279,7 @@ section.hero-banner .circla-label img {
     width: 100%;
   }
 
-  .circla-label img {
+  .circle-label img {
     width: 10rem;
     right: 5%;
     bottom: 5%;
