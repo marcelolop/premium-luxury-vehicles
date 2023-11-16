@@ -26,7 +26,7 @@ section {
 }
 
 /** left content **/
-    
+
 .left-content img {
     width: 100%;
     height: 100%;
@@ -110,8 +110,6 @@ section {
     color: #000;
 }
 
-
-
 select {
     padding: 1rem;
     border-radius: 0.5rem;
@@ -187,6 +185,7 @@ select:focus {
 .description p:last-child {
     margin-bottom: 0;
 }
+
 /** details **/
 
 .details {
@@ -248,10 +247,6 @@ select:focus {
     font-weight: 500;
     color: #000;
 }
-
-/**GALLERY**/
-
-
 
 /** REVIEW **/
 
