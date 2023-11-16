@@ -38,7 +38,7 @@ header {
   color: #000;
 }
 
-.fa-bars {
+.main-nav .fa-bars {
   display: none;
 }
 
@@ -47,7 +47,7 @@ header {
     display: none;
   }
 
-  .fa-bars {
+  .main-nav .fa-bars {
     display: block;
     font-size: 2.5rem;
   }
