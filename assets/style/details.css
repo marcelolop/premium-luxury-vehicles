@@ -225,6 +225,7 @@ select:focus {
 .general-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    place-items: center;
 }
 
 .general-text {
@@ -394,4 +395,83 @@ select:focus {
     background-color: var(--app-button-background-color);
     color: #fff;
     border: 0.1rem solid #f0d400;
+}
+
+@media screen and (max-width: 768px) {
+    .details {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .technical-details, .general-details {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero-banner {
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .technical-details, .general-details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .banner-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .technical-details, .general-details, .product-detail {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 0.8rem
+    }
+
+    .hero-banner {
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+    }
+
+    .banner-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .technical-details, .general-details {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .technical-details, .general-details, .product-detail {
+        font-size: 0.7rem;
+    }
 }
