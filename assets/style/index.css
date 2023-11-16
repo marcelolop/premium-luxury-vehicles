@@ -2,12 +2,89 @@
 @import url(./header-footer.css);
 
 section {
-  padding: 8rem 0;
+  padding: 1rem 0;
 }
 
 /* ! ------------------------------------------------------------------------ */
-/* ! Section Hero Banner                                                      */
+/* ! ST Section Hero Banner                                                      */
 /* ! ------------------------------------------------------------------------ */
+
+.st-flex-container-hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.st-flex-container-hero-banner h2 {
+  font-size: 5rem;
+}
+
+.st-flex-container-hero-banner p {
+  font-size: 2rem;
+}
+
+.st-hero-banner-img-container {
+  width: 70%;
+  flex: 1.6;
+}
+
+.st-hero-banner-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 45%;
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .st-flex-container-hero-banner {
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .st-flex-container-hero-banner {
+    flex-direction: row;
+    gap: 0rem;
+  }
+  .st-hero-banner-text-container {
+    align-items: flex-start;
+  }
+
+  .st-hero-banner-text-container h2 {
+    text-align: left !important;
+  }
+
+}
+
+@media (min-width: 320px) {
+
+  .st-flex-container-hero-banner h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .st-flex-container-hero-banner p {
+    font-size: 1.5rem;
+  }
+
+  .st-hero-banner-text-container {
+    width: 100%;
+    gap: 2rem;
+    line-height: 1;
+  }
+
+  .st-hero-banner-img-container {
+    width: 100%;
+  }
+}
+/* !------------------------------------------- */
 
 .hero-banner {
   display: flex;
@@ -143,10 +220,9 @@ section.hero-banner .circla-label img {
   display: flex;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  justify-items: center; 
+  justify-items: center;
   grid-gap: 2rem;
 }
-  
 
 .car-item {
   box-sizing: border-box;
@@ -182,8 +258,6 @@ section.hero-banner .circla-label img {
   color: rgb(189, 112, 50);
   font-size: 13px;
   margin-bottom: 7px;
-  
-
 }
 
 .car-item .price {
@@ -271,8 +345,6 @@ section.hero-banner .circla-label img {
   font-weight: bold;
 }
 
-
-
 @media (max-width: 1190px) {
   .hero-banner {
     flex-direction: column;
@@ -317,7 +389,7 @@ section.hero-banner .circla-label img {
   .car-offers-title h2 {
   }
   .car-item {
-   width: 90%;
+    width: 90%;
   }
   .card-rating {
     font-size: 16px;
@@ -334,47 +406,47 @@ section.hero-banner .circla-label img {
   }
 }
 .app-btn-global-type-x1 {
-    background-color: #131212;
-    border: 0.1rem solid  #131212;
-    border-radius: 0.5rem;
-    padding: 1rem 2rem;
-    color: rgb(244, 244, 240);
-    transition: all 0.5s ease-in-out;
-    font-weight: 600;
+  background-color: #131212;
+  border: 0.1rem solid #131212;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: rgb(244, 244, 240);
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
 }
 
 .app-btn-global-type-x1:hover {
-    background-color: rgb(244, 244, 240);
-    color:#131212;
+  background-color: rgb(244, 244, 240);
+  color: #131212;
 }
 
 .app-btn-global-type-x2 {
-    background-color: #ffdb4d;
-    border: 0.2rem solid  #ffdb4d;
-    border-radius: 0.5rem;
-    padding: 1rem 2rem;
-    color: #2b2626;
-    transition: all 0.3s ease-in-out;
-    font-weight: 600;
+  background-color: #ffdb4d;
+  border: 0.2rem solid #ffdb4d;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: #2b2626;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
 }
 
 .app-btn-global-type-x2:hover {
-    border: 0.2rem solid  #2b2626;
-    /* font-weight: 700; */
+  border: 0.2rem solid #2b2626;
+  /* font-weight: 700; */
 }
 
 .app-btn-global-type-x3 {
-    background-color: rgb(238, 240, 224);
-    border-radius: 0.5rem;
-    padding: 1rem 2rem;
-    color: #2b2626;
-    transition: all 0.3s ease-in-out;
-    font-weight: 600;
+  background-color: rgb(238, 240, 224);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: #2b2626;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
 }
 
 .app-btn-global-type-x3:hover {
-    background-color: #2b2626;
-    color: rgb(238, 240, 224);
+  background-color: #2b2626;
+  color: rgb(238, 240, 224);
 }
 
 /* ! ------------------------------------------------------------------------ */
@@ -472,8 +544,7 @@ section.hero-banner .circla-label img {
   .center-div p {
     width: 90%;
   }
-
- }
+}
 
 /* ! ------------------------------------------------------------------------ */
 /* ! Section Discount Offer                                                   */
