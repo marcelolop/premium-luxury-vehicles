@@ -177,6 +177,22 @@ footer a {
   translate: 0 0;
 }
 
+.sign-up-google {
+  background-image: url(../media/icons/google.jpg);
+  background-size: 8%;
+  background-repeat: no-repeat;
+  background-position-x: 4.5rem;
+  background-position-y: center;
+}
+
+.sign-up-apple {
+  background-image: url(../media/icons/apple.png);
+  background-size: 9%;
+  background-repeat: no-repeat;
+  background-position-x: 4.5rem;
+  background-position-y: center;
+}
+
 .sign-up-google,
 .sign-up-apple,
 .sign-up-email-password input {
@@ -184,6 +200,7 @@ footer a {
   border-radius: 0.5rem;
   padding: 1rem;
   width: 100%;
+  color: #000;
 }
 
 .sign-up-email-password {
