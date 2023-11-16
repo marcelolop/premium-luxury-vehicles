@@ -105,10 +105,10 @@ footer a {
 }
 
 .join-btn:hover {
-  background-color: #000;
-  border: 0.1rem solid #fff;
+  background-color: #fff;
+  border: 0.1rem solid #000;
   border-radius: 0.5rem;
-  color: #fff;
+  color: #000;
   transition: all 0.3s ease-in-out;
 }
 
