@@ -468,6 +468,19 @@ section.hero-banner .circla-label img {
   color: #000;
 }
 
+@media (max-width: 768px) {
+  .brands-flex-container {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .center-div h2,
+  .center-div p {
+    width: 90%;
+  }
+
+ }
+
 /* ! ------------------------------------------------------------------------ */
 /* ! Section Discount Offer                                                   */
 /* ! ------------------------------------------------------------------------ */
