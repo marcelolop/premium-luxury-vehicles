@@ -232,6 +232,12 @@ section.hero-banner .circla-label img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
   margin-bottom: 20px;
   padding: 10px;
+  border: 0.1rem solid transparent;
+  transition: 0.1s all ease-in-out;
+}
+
+.car-item:hover {
+  border: 0.1rem solid #dcdcdc;
 }
 
 .car-item img {
