@@ -2,7 +2,7 @@
 @import url(./header-footer.css);
 
 section {
-  padding: 1rem 0;
+  padding: 7rem 0;
 }
 
 /* ! ------------------------------------------------------------------------ */
@@ -559,7 +559,7 @@ section.hero-banner .circla-label img {
 
 @media (max-width: 870px) {
   .discount-offer-flex-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .sports-car-flex-container {
