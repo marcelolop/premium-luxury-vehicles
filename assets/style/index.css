@@ -315,28 +315,30 @@ section.hero-banner .circla-label img {
 .card-info {
   padding: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 0.05px solid #eeebeb;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02);
   overflow: hidden;
-  text-align: center;
+}
+
+.card-info-item {
+  padding-left: 1rem;
 }
 
 .card-info-item .info-title {
-  display: block;
+  display: flex;
   font-size: 12px;
   color: #181717;
+  padding-right: 2rem;
+}
+
+.card-info-item {
+  text-align: left;
 }
 
 .card-info-item:not(:last-child) {
   border-right: 1px solid #ccc;
-  padding-right: 15px;
-}
-
-.card-info-item:not(:first-child) {
-  position: relative;
-  right: 20px;
 }
 
 .info {
